@@ -64,7 +64,7 @@ def M2 (L, L_0, L_n): ### Atenção: selecionar índice que esteja dentro da par
 	n3_indice = (n1_indice + n2_indice)//2 # Considera n3 como sendo o quociente da divisão por 2 da soma dos índices n1 e n2.
 	n3 = L[n3_indice]
 
-	pivo = ((n1 + n2 + n3) / 3) # Descobre o índice do pivo. Como todos os valores são inteiros, a divisão será inteira.
+	pivo = int((n1 + n2 + n3) / 3) # Descobre o índice do pivo. Como todos os valores são inteiros, a divisão será inteira.
 
 	L[L_n], L[pivo] = L[pivo], L[L_n]
 	return M0(L, L_0, L_n)
